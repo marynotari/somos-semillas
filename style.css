@@ -1,0 +1,41 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/*	This positions the button.  */
+.position {
+  position: absolute;
+  left: 0px;
+  top: 610px;
+}
+
+/*	This updates the default style of the #ID.
+		The text will disappear by default if no 
+		style/class is being applied to it.
+*/
+#text {
+  opacity: 0;
+  font-family: Sans-serif;
+  font-size: 24px;
+}
+
+/*	This makes a class with @-rules that makes 
+		the html element (ie, the text) fade in and out.
+*/
+.fade {
+  	color: darkgreen;
+    -webkit-animation: fadeinout 3s linear forwards;
+    animation: fadeinout 6s linear forwards;
+}
+
+@-webkit-keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
